@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegistrationForm</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color:grey;
+        }
+
+        .form-box {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            width: auto;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 8px;
+            background-color:green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: green;
+        }.reset-btn {
+            width: 100%;
+            padding: 8px;
+            background-color:red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .reset-btn:hover {
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="form-box">
+
+    <h2>Registration form</form></h2>
+
+    <form>
+        
+        <label for="Fname">Firstname:</label>
+
+        <input type="text" id="Fname" name="Fname" placeholder="enter your fname"><br><br>
+
+       <label for="Lname">Lastname:</label>
+       <input type="text" id="Lname" name="Lname" placeholder="enter your Lname"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email"><br><br>
+
+        <label for="skills">skills:</label>
+        <div class="checkbox-group">
+            <input type="checkbox"> Web Dev
+            <input type="checkbox"> App Dev
+            <input type="checkbox"> Game Dev
+        </div><br>
+
+        <label for="address">Address:</label>
+        <textarea rows="3"></textarea><br><br>
+
+        <label for="password">password:</label>
+        <input type="password"><br><br>
+
+        <label for="fvtcolor">fvtcolor:</label>
+            <input type="radio" name="color"> Red
+            <input type="radio" name="color"> Blue
+            <input type="radio" name="color"> Green
+            <input type="radio" name="color"> Yellow
+        <br>
+
+        <label for="phoneno">phoneno:</label>
+        <input type="number"><br><br>
+
+        <label for="fvtfood">fvtfood:</label>
+        <select>
+            <option>Noodles</option>
+            <option>Paneer</option>
+            <option>Gobi</option>
+            <option>Pani Puri</option>
+            <option>pizza</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit" class="submit-btn">
+        <input type="reset"  value="reset">
+        
+
+
+    </form>
+
+</div>
+
+</body>
+</html>
